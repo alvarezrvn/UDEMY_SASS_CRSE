@@ -41,26 +41,134 @@ body{
 
 .text-box{
     position: absolute;
-    top: 35%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary{
     color: ghostwhite;
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main{
     display: block;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 .heading-primary-sub{
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    letter-spacing: 17.5px;
+    letter-spacing: 22px;
+    animation: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    80%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.btn-white{
+    background-color: ghostwhite;
+    color: #777777;
+    padding: 15px 40px;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn-white::after{
+    background-color: ghostwhite;
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated-up{
+    animation: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
 }
