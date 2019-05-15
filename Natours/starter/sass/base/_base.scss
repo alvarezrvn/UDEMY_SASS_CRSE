@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /*Default font size is 10px ----> 16/10 Defines what 1 rem is*/
+    font-size: 62.5%;
+}
