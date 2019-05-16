@@ -1,5 +1,27 @@
+@import "../abstracts/variables";
 .section-about{
     background-color: $color-grey-light;
     padding: 30rem 0;
     margin-top: -20vh;
+}
+.section-features{
+    padding: 20rem 0;
+    margin-top: -12rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.60), rgba($color-primary-dark, 0.65)), url("../img/nat-4.jpg");
+    background-size: cover;
+    transform: skewY(-7deg);
+    
+    //direct child selection
+    & > *{
+        transform: skewY(7deg);
+    }
+}
+.section-tours {
+    padding: 25rem 0 10rem 0;
+    background-color: $color-grey-light;
+    margin-top: -11rem;
+}
+.section-stories {
+    position: relative;
+    padding: 15rem 0;
 }
