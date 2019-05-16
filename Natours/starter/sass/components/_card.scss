@@ -49,6 +49,8 @@
         height: 23rem;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         &--1 {
             background-image: linear-gradient(to right bottom, $orange, $orange-dark), url(../img/nat-5.jpg);
         }
@@ -102,5 +104,30 @@
                 }
             }
         }
+    }
+    
+    //backside styling
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+    }
+    &__price-box {
+        text-align: center;
+        color: $white;
+        margin-bottom: 8rem;
+    }
+    
+    &__price-only {
+        font-size: $default-font-size;
+        text-transform: uppercase;
+    }
+    
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 300;
     }
 }
