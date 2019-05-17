@@ -1,7 +1,7 @@
 # NOTICE:
 This is an import of the udemy course "Advanced CSS course" by Jonas Schmedtmann git:https://github.com/jonasschmedtmann/advanced-css-course
 
-I am using this course as a training for sass and while I use his code as a template for his course, I write my own sass code and give my personalized touch to his project. I do not take credit for this course or Jonas template but I do take credit for any code I write and commit to this repository.
+I am using this course as a training for sass and I do not take credit for the design of the webpages. I do not take credit for this course or Jonas template. Any code that I write and push into this repository is for training purposes only and to show I completed sections within his course.
 
 
 # Course Material and FAQ for my Advanced CSS Course
