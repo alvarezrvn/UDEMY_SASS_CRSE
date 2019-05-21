@@ -2,7 +2,7 @@
 .composition{
     position: relative;
     &__photo{
-        width: 70%;
+        width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($black, .4);
         border-radius: 2px;
         position: absolute;
@@ -14,7 +14,7 @@
             
         }
         &--p2{
-            right: -20%;
+            right: 5%;
             top: 2rem;
         }
         &--p3{
